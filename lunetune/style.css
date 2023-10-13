@@ -1,0 +1,50 @@
+@font-face {
+    font-family: pixel;
+    src: url(font/ka1.ttf);
+}
+
+@font-face {
+    font-family: smallpixel;
+    src: url(font/Minecraft.ttf);
+}
+
+body {
+    font-family: "smallpixel";
+}
+.title {
+    font-family: "pixel", monospace;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.image {
+            animation: blink 4s infinite;
+            animation-fill-mode: both;
+        }
+    
+        @keyframes blink {
+            0% {
+                opacity: 0
+            }
+    
+            50% {
+                opacity: 1
+            }
+
+            70% {
+                opacity: 1
+            }
+            100% {
+                opacity: 0
+            }
+        }
+
+.footer {
+    font-family: "pixel";
+    font-family: 5px;
+}
+
+#progressbar {
+    width: 100%;
+    /* Ensure the slider takes up the full width of its container */
+}

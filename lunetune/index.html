@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>moon tunes</title>
+</head>
+<!--audio tag-->
+<audio src="" id="audio"></audio>
+<!--audio tag-->
+
+<!--div to wrap content-->
+<body>
+<div class=" all flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 bg-[#fbcfe8]">
+    <span class="flex items-center">
+        <img class="w-auto h-36 image" src="C:\Users\clavarin\Documents\lunetune\media\moonlogo.png" alt="logo">
+        <p class="title">
+        moon tunes
+        </p>
+        <img class="w-auto h-36 image" src="C:\Users\clavarin\Documents\lunetune\media\moonlogo.png" alt="logo">
+    </span>
+    <div class="flex w-96 flex-col rounded-xl bg-[#fce7f3] bg-clip-border text-gray-700 shadow-md">
+        <div class="mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
+            <img src="https://i.pinimg.com/564x/c9/ad/c5/c9adc55e02be2f3aa36108f2e0c877c1.jpg"
+                class="h-full w-full object-cover song-pic" />
+        </div>
+        <div class="p-6">
+            <div class="mb-2 flex items-center justify-between pb-6">
+                <p class="block font-medium text-gray-700" id="song-name">
+                    roslyn
+                </p>
+                <p class="block font-medium text-gray-700" id="artist-name">
+                    bon iver + st vincent
+                </p>
+            </div>
+            <input id="progressbar" type="range" value="0" class="w-full h-2 bg-pink-300 rounded-lg appearance-none cursor-pointer">
+            <div class="flex justify-between">
+                <span class="text-small font-medium text-[#F9A8D4]" id="start">0:00</span>
+                <span class="text-sm font-medium text-[#F9A8D4]" id="end">4:50</span>
+            </div>
+            <div class="selections block text-center py-6 space-x-20">
+                <button class="text-[#F9A8D4] hover:text-[#FBCFE8]" id="restart"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="text-[#F9A8D4] hover:text-[#FBCFE8]" id="play"><i class="fa-solid fa-play"></i></button>
+                <button class="text-[#F9A8D4] hover:text-[#FBCFE8]" id="pause"><i class="fa-solid fa-pause"></i></button>
+                <button class="text-[#F9A8D4] hover:text-[#FBCFE8]" id="next-song"><i class="fa-solid fa-forward-step"></i></button>
+            </div>
+        </div>
+        <div class="p-6 pt-0">
+            <p class="block w-full text-zinc-300 footer">coded by lee</p>
+        </div>
+    </div>
+<script src="app.js"></script>
+<script src="https://kit.fontawesome.com/ee24971f7f.js" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
